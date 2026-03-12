@@ -1,7 +1,7 @@
 ## GenAI-powered Legal Contract Analysis and Risk Assessment Bot
 
 ### Overview
-A modular Python + Streamlit app that lets users upload contracts (PDF/DOCX/TXT), preprocesses them with spaCy + regex, runs a mock LLM analysis (GPT-4/Claude stub) to identify clause-level risks, and outputs an overall risk score with export options (JSON and PDF).
+A modular Python + Streamlit app that lets users upload contracts (PDF/DOCX/TXT), preprocesses them with spaCy + regex, store the vectors in a vector database qdrant then we perform similarity search then runs a mock LLM analysis (GPT-4/Claude stub) to identify clause-level risks, and outputs an overall risk score with export options (JSON and PDF).
 
 ### Tech Stack
 - Backend: Python 3.9+, spaCy, PyPDF2, docx2txt, regex
@@ -41,3 +41,4 @@ app.py
 ### License
 MIT
 "# Legal_Contract_analysis_chatbot" 
+
